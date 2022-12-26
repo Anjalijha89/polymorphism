@@ -1,0 +1,47 @@
+public class polymorphism {
+    //1 Compile time polymorphism
+  /*  public static void main(String args[])
+    {
+        calculater cal = new calculater();
+        System.out.println(cal.sum(1,4));
+        System.out.println(cal.sum((float)1.2 , (float)2.4));
+        System.out.println(cal.sum(1,2,3));
+    }
+
+}
+class calculater
+{
+    int sum(int a,int b)
+    {
+        return a+b;
+    }
+    float sum(float a,float b)
+    {
+        return a+b;
+    }
+    int sum(int a,int b,int c)
+    {
+        return a+b+c;
+    }
+   */
+
+    //2 Run time polymorphism
+    public static void main(String args[]) {
+        deer d = new deer();
+        d.eat();
+    }
+}
+
+    class Animal {
+        void eat() {
+            System.out.println("Eat anything");
+        }
+    }
+
+    class deer extends Animal {
+        void eat() {
+            System.out.println("Eat grass");
+        }
+    }
+
+
